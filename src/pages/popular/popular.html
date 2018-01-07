@@ -1,0 +1,20 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Popular News</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let news of popnews"> 
+      <ion-thumbnail item-start (click)="viewItem(news.data)">
+        <img [src]="news.data.thumbnail">
+      </ion-thumbnail> 
+      <h2>{{news.data.title}}</h2>
+      <p>{{news.data.author}}</p>
+      <button ion-button clear item-end (click)="viewItem(news.data)">View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

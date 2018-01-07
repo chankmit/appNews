@@ -1,0 +1,9 @@
+{
+  "name": "AppNews",
+  "app_id": "b1c5b9c9",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
+ 
